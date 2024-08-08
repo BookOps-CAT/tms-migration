@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "tms-migration"
+version = "0.1.0"
+description = "Scripts to manipulate TMS metadata and serialize it to MARC21 for migration to ILS"
+authors = ["klinga <klingaroo@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+SQLAlchemy = "^2.0.32"
+click = "^8.1.7"
+jupyterlab = "^4.2.4"
+pandas = "^2.2.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+pytest = "^8.3.2"
+pytest-cov = "^5.0.0"
+mypy = "^1.11.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
