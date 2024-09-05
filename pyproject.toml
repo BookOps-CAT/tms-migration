@@ -1,11 +1,10 @@
 [tool.poetry]
-name = "tms-migration"
+name = "tms"
 version = "0.1.0"
 description = "Scripts to manipulate TMS metadata and serialize it to MARC21 for migration to ILS"
 authors = ["klinga <klingaroo@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
