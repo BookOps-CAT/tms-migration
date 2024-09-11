@@ -8,7 +8,27 @@ Unable to connect using `pymssql` driver.
 ## Work notes
 
 ### 9/11/2024
+#### Title types occurrences
++ NULL has 71 entries.
++ COLLECTION has 126702 entries.
++ PUBLISHED_PORTFOLIO has 8316 entries.
++ SERIES has 53259 entries.
++ BOOK_OR_ALBUM_TITLE has 32919 entries.
++ TITLE has 410055 entries.
++ SUBTITLE_OR_TITLE_TRANSLATION has 3386 entries.
++ PERIODICAL_OR_SERIAL_PUBLICATION has 1773 entries.
++ TITLE_CONTINUED has 614 entries.
++ DESCRIPTIVE_TITLE has 51589 entries.
++ PORTFOLIO_OR_SET has 7365 entries.
++ ALTERNATE_TITLE has 2950 entries.
++ CAPTION has 1526 entries.
++ FOLDER_OR_SUBSERIES has 49482 entries.
++ ADDITIONAL_AUTHORS has 2651 entries.
++ LOCATION_DEPICTED has 40867 entries.
 
+#### New classes
++ ObjTitles tbl (Virginia suggested Descriptive)
++ TitleTypes tbl
 ### 9/10/2024 Connecting to original TMS DB
 + Successfully tested access to TMS DB using DBeaver
 + Failed to connect using `sqlachemy` and `pymssql` driver. Successful with `PyODBC` and installation of Microsoft ODBC Driver 13 for SQL Server. Oof!
