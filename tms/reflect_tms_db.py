@@ -1,7 +1,7 @@
 from sqlalchemy import Table
 from sqlalchemy import MetaData
 
-from tms_engine import get_engine
+from db_session import get_tms_engine
 
 metadata_obj = MetaData()
 
@@ -20,7 +20,7 @@ def get_tbl_constraints(tbl: Table):
 
 
 if __name__ == "__main__":
-    engine = get_engine("data/private/tms_2024-08-07.db")
+    engine = get_tms_engine()
     tbl = get_objects_tbl(engine, "Objects")
     tbl_cols = get_tbl_columns(tbl)
     for t in tbl_cols:

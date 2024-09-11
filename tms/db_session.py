@@ -2,7 +2,6 @@ import json
 import os
 
 from sqlalchemy import create_engine, select
-from sqlalchemy.orm import Session
 
 from tms.tms_models import Roles
 
@@ -25,11 +24,6 @@ def get_tms_engine():
     url = f"mssql+pyodbc://{creds['USER']}:{creds['PASSWORD']}@{creds['HOST']}:{creds['PORT']}/{creds['DB']}?driver=ODBC+Driver+13+for+SQL+Server"
     engine = create_engine(url)
     return engine
-
-
-def get_session(engine):
-    with Session(engine) as sess:
-        return sess
 
 
 def engine_connection_test(engine):

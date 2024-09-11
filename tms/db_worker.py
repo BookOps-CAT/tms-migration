@@ -1,24 +1,22 @@
 from sqlalchemy import select, func
 from sqlalchemy.exc import NoResultFound
+from sqlalchemy.orm import Session
 
-from tms.tms_engine import get_engine, get_session
-from tms.models import Objects, Departments, Roles, RolesTypes
+from tms.db_session import get_tms_engine, get_manipulation_engine
+from tms.tms_models import Objects, Departments, Roles, RolesTypes
 
 
 def temp(engine):
-    with get_session(engine) as session:
+    with Session(engine) as session:
         rows = session.execute(
             select(Roles.Role, Roles.RoleID).where(Roles.RoleTypeID == 1)
         ).all()
         for r in rows:
-            # print(type(r))
-            # print(r)
-            # break
             print(f"{r.Role} = {r.RoleID}")
 
 
 def object_by_dept_count(engine, dept_id: int):
-    with get_session(engine) as session:
+    with Session(engine) as session:
         row_count = session.scalar(
             select(func.count())
             .select_from(Objects)
@@ -32,10 +30,5 @@ def object_by_dept_count(engine, dept_id: int):
 
 
 if __name__ == "__main__":
-    engine = get_engine("data/private/tms_2024-08-07.db")
+    engine = get_tms_engine()
     temp(engine)
-    # for i in range(0, 53):
-    #     try:
-    #         object_by_dept_count(engine, i)
-    #     except NoResultFound:
-    #         pass
