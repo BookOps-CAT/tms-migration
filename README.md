@@ -7,7 +7,13 @@ Unable to connect using `pymssql` driver.
 
 ## Work notes
 
-### (9/5/2024)
+### 9/11/2024
+
+### 9/10/2024 Connecting to original TMS DB
++ Successfully tested access to TMS DB using DBeaver
++ Failed to connect using `sqlachemy` and `pymssql` driver. Successful with `PyODBC` and installation of Microsoft ODBC Driver 13 for SQL Server. Oof!
++ plan to pull data directly from TMS DB and store manipulated data in SQLite
+### 9/5/2024 
 #### Objects count by department:
 + 'Photography Collection' (1) has 275592 objects.
 + 'Print Collection' (2) has 60461 objects.
@@ -20,7 +26,7 @@ Unable to connect using `pymssql` driver.
 + 'Picture Collection' (18) has 10009 objects.
 + 'DEACCESSIONED' (49) has 39 objects.
 + 'LPA DANCE' (50) has 76 objects.
-### Missing tables in Tony's DB copy (8/22/2024)
+### 8/22/2024 Missing tables in Tony's DB copy
 + AddressType, ConAddresses, ConEMail, ConPhones, EMailType tbls: consult with Wallach staff; export to a sheet?
 + AltNum tbl: use TableID & ID to figure out the relation to Objects or Constituents tbls
 + AuthorityAltNum tbl: DID NOT SEE IT AMONG EXPORTED TABLES! may include valuable data
