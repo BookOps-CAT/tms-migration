@@ -1,10 +1,6 @@
 from typing import Optional
-from sqlalchemy import ForeignKey
-from sqlalchemy import String
-from sqlalchemy.orm import DeclarativeBase
-from sqlalchemy.orm import Mapped
-from sqlalchemy.orm import mapped_column
-from sqlalchemy.orm import relationship
+from sqlalchemy import ForeignKey, String
+from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 
 class Base(DeclarativeBase):
@@ -19,7 +15,29 @@ class Objects(Base):
     DepartmentID: Mapped[int] = mapped_column(ForeignKey("Departments.DepartmentID"))
 
     def __repr__(self) -> str:
-        return f"Object(ObjectID={self.ObjectID!r}, ObjectNumber={self.ObjectNumber!r}, ObjectCount={self.ObjectCount!r}, DepartmentID={self.DepartmentID!r})"
+        return (
+            f"Object(ObjectID={self.ObjectID!r}, ObjectNumber={self.ObjectNumber!r}, "
+            f"ObjectCount={self.ObjectCount!r}, DepartmentID={self.DepartmentID!r})"
+        )
+
+
+class ObjTitles(Base):
+    __tablename__ = "ObjTitles"
+    TitleID: Mapped[int] = mapped_column(primary_key=True)
+    ObjectID: Mapped[int] = mapped_column(ForeignKey("Objects.ObjectID"))
+    TitleTypeID: Mapped[int] = mapped_column(ForeignKey("TitleTypes.TitleTypeID"))
+    Title: Mapped[str] = mapped_column(String(850), nullable=False)
+    DisplayOrder: Mapped[int] = mapped_column(nullable=False)
+    Displayed: Mapped[int] = mapped_column(nullable=False)
+    LanguageID: Mapped[int] = mapped_column(ForeignKey("Languages.LanguageID"))
+
+    def __repr__(self) -> str:
+        return (
+            f"ObjectTitle(TitleID={self.TitleID!r}, ObjectID={self.ObjectID!r}, "
+            f"TitleTypeID={self.TitleTypeID!r}, Title={self.Title!r}, "
+            f"DisplayOrder={self.DisplayOrder!r}, Displayed={self.Displayed!r}, "
+            f"LanguageID={self.LanguageID!r})"
+        )
 
 
 class Departments(Base):
@@ -30,7 +48,11 @@ class Departments(Base):
     Objects: Mapped[list["Objects"]] = relationship()
 
     def __repr__(self) -> str:
-        return f"Department(DepartmentID={self.DepartmentID!r}, Department={self.Department!r}, Mnemonic={self.Mnemonic!r}, Objects={self.Objects!r})"
+        return (
+            f"Department(DepartmentID={self.DepartmentID!r}, "
+            f"Department={self.Department!r}, Mnemonic={self.Mnemonic!r}, "
+            f"Objects={self.Objects!r})"
+        )
 
 
 class Roles(Base):
@@ -40,7 +62,10 @@ class Roles(Base):
     Role: Mapped[str] = mapped_column(String(30))
 
     def __repr__(self) -> str:
-        return f"Role(RoleID={self.RoleID!r}, RoleTypeID={self.RoleTypeID!r}, Role={self.Role!r})"
+        return (
+            f"Role(RoleID={self.RoleID!r}, RoleTypeID={self.RoleTypeID!r}, "
+            f"Role={self.Role!r})"
+        )
 
 
 class RolesTypes(Base):
@@ -50,3 +75,15 @@ class RolesTypes(Base):
 
     def __repr__(self) -> str:
         return f"RolesType(RoleTypeID={self.RoleTypeID!r}, RoleType={self.RoleType!r})"
+
+
+class TitleTypes(Base):
+    __tablename__ = "TitleTypes"
+    TitleTypeID: Mapped[int] = mapped_column(primary_key=True)
+    TitleType: Mapped[str] = mapped_column(String(50))
+
+    def __repr__(self) -> str:
+        return (
+            f"TitleType(TitleTypeID={self.TitleTypeID!r}, "
+            f"TitleType={self.TitleType!r})"
+        )
