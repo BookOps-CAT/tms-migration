@@ -1,6 +1,10 @@
 # tms-migration
 Scripts to reconcile and serialize to MARC21 TMS metadata.
 
+## TMS MSSQL Database connectivity
+Use `sqlalchemy` with `PyODBC` driver to connect. Additional [Microsoft ODBC Driver 13 for SQL Server](https://www.microsoft.com/en-us/download/details.aspx?id=50420) is required.
+Unable to connect using `pymssql` driver.
+
 ## Work notes
 
 ### (9/5/2024)
