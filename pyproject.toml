@@ -12,7 +12,6 @@ SQLAlchemy = "^2.0.32"
 click = "^8.1.7"
 jupyterlab = "^4.2.4"
 pandas = "^2.2.2"
-pyodbc = "^5.1.0"
 
 
 [tool.poetry.group.dev.dependencies]
