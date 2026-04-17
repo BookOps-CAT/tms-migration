@@ -1,0 +1,172 @@
+<record xmlns="http://www.loc.gov/MARC21/slim" xmlns:zs="http://docs.oasis-open.org/ns/search-ws/sruResponse">
+<leader>02680ckd a22005417a 4500</leader>
+<controlfield tag="001">20515988</controlfield>
+<controlfield tag="005">20250607090311.8</controlfield>
+<controlfield tag="007">kg||||</controlfield>
+<controlfield tag="007">cr |||||||||||</controlfield>
+<controlfield tag="008">030623s1865 xxunnn | | kneng </controlfield>
+<datafield ind1=" " ind2=" " tag="035">
+<subfield code="a">20515988</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="906">
+<subfield code="a">0</subfield>
+<subfield code="b">cbc</subfield>
+<subfield code="c">orignew</subfield>
+<subfield code="d">u</subfield>
+<subfield code="e">ncip</subfield>
+<subfield code="f">20</subfield>
+<subfield code="g">y-printpho</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="955">
+<subfield code="a">LCAP batch update 2025-06-02-04:00: LCAPM-861</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="010">
+<subfield code="a"> 2018670959</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="035">
+<subfield code="a">(DLC)cwp2003005030/PP</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="037">
+<subfield code="a">LC-DIG-cwpb-02267</subfield>
+<subfield code="b">DLC</subfield>
+<subfield code="c">(digital file from original neg. of left half)</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="037">
+<subfield code="a">LC-DIG-cwpb-03600</subfield>
+<subfield code="b">DLC</subfield>
+<subfield code="c">(digital file from original neg. of right half)</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="040">
+<subfield code="a">DLC</subfield>
+<subfield code="b">eng</subfield>
+<subfield code="c">DLC</subfield>
+<subfield code="e">gihc</subfield>
+</datafield>
+<datafield ind1="0" ind2="0" tag="050">
+<subfield code="a">LC-B811-</subfield>
+<subfield code="b">3035</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="090">
+<subfield code="3">corresponding photographic print</subfield>
+<subfield code="a">LOT 4165-G</subfield>
+</datafield>
+<datafield ind1="0" ind2="0" tag="245">
+<subfield code="a">Petersburg, Virginia. Interior of colonial mansion on Bollingbrook street</subfield>
+<subfield code="h">[graphic].</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="260">
+<subfield code="c">1865.</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="300">
+<subfield code="a">1 negative (2 plates) :</subfield>
+<subfield code="b">glass, stereograph, wet collodion.</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="336">
+<subfield code="a">still image</subfield>
+<subfield code="b">sti</subfield>
+<subfield code="2">rdacontent</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="337">
+<subfield code="a">unmediated</subfield>
+<subfield code="b">n</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="337">
+<subfield code="3">Digital image</subfield>
+<subfield code="a">computer</subfield>
+<subfield code="b">c</subfield>
+<subfield code="2">rdamedia</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="338">
+<subfield code="a">sheet</subfield>
+<subfield code="b">nb</subfield>
+<subfield code="2">rdacarrier</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="338">
+<subfield code="3">Digital image</subfield>
+<subfield code="a">online resource</subfield>
+<subfield code="b">cr</subfield>
+<subfield code="2">rdacarrier</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="500">
+<subfield code="a">Stereo filed in LOT 4165.</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="500">
+<subfield code="a">Caption from negative sleeve: Interior, colonial mansion on Bollingbrook St., Petersburg.</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="500">
+<subfield code="a">Miller, vol. 3, p. 277.</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="500">
+<subfield code="a">Two plates form left (LC-B811-3035A) and right (LC-B811-3035B) halves of a stereograph pair.</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="500">
+<subfield code="a">Corresponding print is in LOT 4165-G.</subfield>
+</datafield>
+<datafield ind1="8" ind2=" " tag="524">
+<subfield code="a">Credit line: Civil war photographs, 1861-1865, Library of Congress, Prints and Photographs Division.</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="540">
+<subfield code="a">No known restrictions on publication. For information, see "Civil war photographs, 1861-1865,"</subfield>
+<subfield code="u">http://www.loc.gov/rr/print/res/120_cwar.html</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="545">
+<subfield code="a">General information about Civil war photographs is available at</subfield>
+<subfield code="u">https://hdl.loc.gov/loc.pnp/pp.cwp</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="580">
+<subfield code="a">Forms part of: Civil war photographs, 1861-1865 (Library of Congress).</subfield>
+</datafield>
+<datafield ind1=" " ind2="0" tag="651">
+<subfield code="a">United States</subfield>
+<subfield code="x">History</subfield>
+<subfield code="y">Civil War, 1861-1865.</subfield>
+</datafield>
+<datafield ind1=" " ind2="7" tag="655">
+<subfield code="a">Stereographs</subfield>
+<subfield code="y">1860-1870.</subfield>
+<subfield code="2">gmgpc</subfield>
+</datafield>
+<datafield ind1=" " ind2="7" tag="655">
+<subfield code="a">Glass negatives</subfield>
+<subfield code="y">1860-1870.</subfield>
+<subfield code="2">gmgpc</subfield>
+</datafield>
+<datafield ind1="0" ind2=" " tag="773">
+<subfield code="t">Civil war photographs, 1861-1865 (Library of Congress)</subfield>
+<subfield code="w">(DLC) 94837685</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="852">
+<subfield code="a">Library of Congress</subfield>
+<subfield code="b">Prints and Photographs Division</subfield>
+<subfield code="e">Washington, D.C. 20540 USA</subfield>
+<subfield code="n">dcu</subfield>
+<subfield code="u">https://hdl.loc.gov/loc.pnp/pp.print</subfield>
+</datafield>
+<datafield ind1="4" ind2="1" tag="856">
+<subfield code="3">digital file from original neg. of left half</subfield>
+<subfield code="d">cwpb</subfield>
+<subfield code="f">02267</subfield>
+<subfield code="q">p</subfield>
+<subfield code="u">https://hdl.loc.gov/loc.pnp/cwpb.02267</subfield>
+</datafield>
+<datafield ind1="4" ind2="1" tag="856">
+<subfield code="3">digital file from original neg. of right half</subfield>
+<subfield code="d">cwpb</subfield>
+<subfield code="f">03600</subfield>
+<subfield code="q">p</subfield>
+<subfield code="u">https://hdl.loc.gov/loc.pnp/cwpb.03600</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="985">
+<subfield code="a">pp/cwp</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="985">
+<subfield code="a">pp/civwar</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="985">
+<subfield code="e">pp/minload</subfield>
+</datafield>
+<datafield ind1=" " ind2=" " tag="985">
+<subfield code="a">pp/diof</subfield>
+</datafield>
+</record>

@@ -13,6 +13,7 @@ click = "^8.1.7"
 jupyterlab = "^4.2.4"
 pandas = "^2.2.2"
 pymarc = "^5.3.1"
+lingua-language-detector = "^2.2.0"
 
 
 [tool.poetry.group.dev.dependencies]
